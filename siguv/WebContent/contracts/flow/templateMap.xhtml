@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <h:outputStylesheet name="default.css"/>
+        <title><ui:insert name="title">Dentro Flow</ui:insert></title>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"></link>
+		<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="../css/leaflet.css"></link>
+  		<!-- Leaflet JS -->
+    <script src="../js/leaflet.js"></script>
+    	<!-- Leaflet Addons -->
+ 	<script src="../js/Leaflet.ImageOverlay.Rotated.js"></script>
+ 	
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script> 
+	 <!-- Custom styles for this template -->
+	<link rel="stylesheet" href="../../css/estilo.css"></link>
+	
+	<!-- JQUERY, POPPER Y BOOTSTRAP -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+ 	  
+ 	
+    </h:head>
+
+    <h:body styleClass="body">
+        <div id="container">
+            <div id="header">
+                <h2><ui:insert name="head">Head</ui:insert></h2>
+            </div>
+
+            <div id="space">
+                <p></p>
+            </div>
+
+            <div id="content">
+                <ui:insert name="content"/>
+            </div>
+        </div>
+    </h:body>
+</html>

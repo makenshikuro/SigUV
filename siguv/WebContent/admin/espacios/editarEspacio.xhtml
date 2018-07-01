@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:fc="http://xmlns.jcp.org/jsf/composite/components"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	template="/WEB-INF/templates/admin.xhtml">
+
+	<ui:define name="head">
+		<title>Admin Starter</title>
+	</ui:define>
+
+	<ui:define name="logo-lg">
+        Admin Starter
+    </ui:define>
+
+	<ui:define name="logo-mini">
+        Admin
+    </ui:define>
+
+	<ui:define name="menu">
+		<ui:include src="/WEB-INF/templates/menu-sidebar.xhtml" />
+	</ui:define>
+
+	<ui:define name="top-menu">
+		<ui:include src="/WEB-INF/templates/top-bar.xhtml" />
+	</ui:define>
+
+	<ui:define name="title">
+		
+	</ui:define>
+
+	<ui:define name="description">
+
+	</ui:define>
+
+	<ui:define name="body">
+		<h2>Editar Espacio #{espacioBean.espacio.nombrees}</h2>
+
+		<h:panelGroup rendered="#{espacioBean.nav eq 'basic'}">
+			<h:form id="espacio-basico">
+				<p:panel id="panel" style="margin-bottom:10px;">
+					<p:messages id="messages" />
+					<h:panelGrid columns="2" cellpadding="5">
+
+						<p:outputLabel value="Espacio: *" />
+						<p:outputLabel id="getIdfake"
+							value="#{espacioBean.espacio.idespacio}" />
+
+						<p:outputLabel for="getNombreES" value="Nombre (Español): *" />
+						<p:inputText id="getNombreES"
+							requiredMessage="Es necesario un nombre de espacio"
+							required="true" value="#{espacioBean.espacio.nombrees}"></p:inputText>
+
+						<p:outputLabel for="getNombreVL" value="Nombre (Valenciano)" />
+						<p:inputText id="getNombreVL"
+							value="#{espacioBean.espacio.nombrevl}"></p:inputText>
+
+						<p:outputLabel for="getNombreEN" value="Nombre (Inglés)" />
+						<p:inputText id="getNombreEN"
+							value="#{espacioBean.espacio.nombreen}"></p:inputText>
+
+						<p:outputLabel for="getBloque" value="Bloque" />
+						<p:outputLabel id="getBloque" autocomplete="false"
+							value="#{espacioBean.espacio.bloque}">
+						</p:outputLabel>
+
+						<p:outputLabel for="getPiso" value="Piso" />
+						<p:outputLabel autocomplete="false" id="getPiso"
+							value="#{espacioBean.espacio.piso}">
+						</p:outputLabel>
+
+						<p:outputLabel for="getEspacio" value="Espacio" />
+						<p:outputLabel autocomplete="false" id="getEspacio"
+							value="#{espacioBean.codEspacio}">
+						</p:outputLabel>
+
+						<p:outputLabel for="getTipo" value="Tipo" />
+						<p:selectOneMenu id="getTipo" value="#{espacioBean.espacio.tipo}">
+							<f:selectItem itemValue="aula" itemLabel="Aula" />
+							<f:selectItem itemValue="despacho" itemLabel="Despacho" />
+							<f:selectItem itemValue="laboratorio" itemLabel="Laboratorio" />
+						</p:selectOneMenu>
+					</h:panelGrid>
+					<p>
+						<h:commandButton styleClass="btn btn-info" value="Siguiente"
+							action="#{espacioBean.next(1)}" ajax="false" />
+						<h:commandButton styleClass="btn btn-info" value="Salir"
+							action="#{espacioBean.volver()}" ajax="false" />
+					</p>
+				</p:panel>
+				<h:inputHidden id="getIdEspacio"
+					value="#{espacioBean.espacio.idespacio}" />
+			</h:form>
+		</h:panelGroup>
+		<h:panelGroup rendered="#{espacioBean.nav eq 'loc'}">
+			<h:form id="map-editor">
+
+				<h:inputHidden id="getPolygon"
+					value="#{espacioBean.espacio.boundingbox}" />
+				<h:inputHidden  id="getLocalizacion"
+					value="#{espacioBean.localizacion}" />
+				<div class="row justify-content-center">
+
+					<p:outputLabel value="Plano:  " />
+					<p:selectOneMenu id="selectEspacio" style="width:150px"
+						onchange="changeMap(this)">
+
+						<f:selectItems value="#{espacioBean.edificio.planos}"
+							var="userItem" itemLabel="#{userItem.id.idplano}"
+							itemValue="#{userItem.enlace}" />
+					</p:selectOneMenu>
+
+					<div class="col-12">
+						<div id="map" class="mapPlano"></div>
+						<h:inputHidden id="testMap" value="#{espacioBean.testMap}"
+							pt:data-ptl="#{espacioBean.edificio.topleft}"
+							pt:data-ptr="#{espacioBean.edificio.topright}"
+							pt:data-pbl="#{espacioBean.edificio.bottomleft}" />
+
+					</div>
+					<div class="col-12">
+						<p>
+							<p:commandButton value="Anterior"
+								actionListener="#{espacioBean.next(0)}" ajax="false" />
+							<p:commandButton value="Siguiente"
+								actionListener="#{espacioBean.next(2)}" ajax="false" />
+							<p:commandButton value="Salir"
+								actionListener="#{espacioBean.volver()}" ajax="false" />
+						</p>
+					</div>
+				</div>
+
+			</h:form>
+		</h:panelGroup>
+
+		<h:panelGroup rendered="#{espacioBean.nav eq 'pano'}">
+			<h:form id="fileUpoadForm" enctype="multipart/form-data"
+				prependId="false">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<p />
+						<h:outputText value="File: "></h:outputText>
+
+						<p:fileUpload id="file"
+							fileUploadListener="#{espacioBean.saveFile}" fileLimit="1"
+							mode="advanced" allowTypes="/(\.|\/)(gif|jpe?g|png)$/"
+							value="#{espacioBean.file}" />
+					</div>
+					<div class="col-12">
+						<p:dataTable var="pano" value="#{espacioBean.panos}">
+							<p:column headerText="Nombre">
+								<h:outputText value="#{pano.nombre}" />
+							</p:column>
+
+							<p:column headerText="Tipo">
+								<h:outputText value="#{pano.tipo}" />
+							</p:column>
+
+							<p:column headerText="Tamaño">
+								<h:outputText value="#{pano.size} Kb" />
+							</p:column>
+
+							<p:column headerText="Eliminar">
+								<h:commandButton
+									action="#{espacioBean.removeFile(status.index)}"
+									onConfirmComplete="#{espacioBean.reload()}" value="Eliminar" />
+							</p:column>
+
+						</p:dataTable>
+
+					</div>
+					<div class="col-12">
+
+						<p>
+							<p:commandButton value="Anterior"
+								actionListener="#{espacioBean.next(1)}" ajax="false" />
+							<p:commandButton value="Siguiente"
+								actionListener="#{espacioBean.next(3)}" ajax="false" />
+							<p:commandButton value="Salir"
+								actionListener="#{espacioBean.volver()}" ajax="false" />
+						</p>
+
+					</div>
+				</div>
+			</h:form>
+		</h:panelGroup>
+		<h:panelGroup rendered="#{espacioBean.nav eq 'profesor'}">
+			<h:form>
+				<p:pickList id="pickList" value="#{espacioBean.pickListProfesor}"
+					var="e" itemLabel="#{e}" itemValue="#{e}" responsive="true"
+					showSourceFilter="true" showTargetFilter="true"
+					filterMatchMode="contains" />
+				<p>
+					<h:commandButton styleClass="btn btn-info" value="Atrás"
+						action="#{espacioBean.next(2)}" ajax="false" />
+					<h:commandButton styleClass="btn btn-info" value="Guardar"
+						action="#{espacioBean.actualizaEspacio()}" ajax="false" />
+					<h:commandButton immediate="true" styleClass="btn btn-info"
+						value="Salir" action="#{espacioBean.volver()}" ajax="false" />
+				</p>
+
+
+			</h:form>
+		</h:panelGroup>
+
+
+		<script src="../../js/editor.mapa.espacio.js"></script>
+	</ui:define>
+
+
+	<ui:define name="footer">
+		<ui:include src="/WEB-INF/templates/footer.xhtml" />
+	</ui:define>
+
+
+</ui:composition>

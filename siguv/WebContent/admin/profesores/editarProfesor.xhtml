@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+			    xmlns:f="http://xmlns.jcp.org/jsf/core"
+			    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+			    xmlns:fc="http://xmlns.jcp.org/jsf/composite/components"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/templates/admin.xhtml">
+
+    <ui:define name="head">
+        <title>Admin Starter</title>
+    </ui:define>
+
+    <ui:define name="logo-lg">
+        Admin Starter
+    </ui:define>
+
+    <ui:define name="logo-mini">
+        Admin
+    </ui:define>
+
+     <ui:define name="menu">
+        <ui:include src="/WEB-INF/templates/menu-sidebar.xhtml"/>
+     </ui:define>
+
+    <ui:define name="top-menu">
+        <ui:include src="/WEB-INF/templates/top-bar.xhtml"/>
+    </ui:define>
+
+      <ui:define name="title">
+        <h2 class="align-center">
+            Welcome to the <span class="text-aqua"> <i><a href="https://github.com/adminfaces/admin-starter" target="_blank"
+                                                          style="text-transform: none;text-decoration: none"> AdminFaces Starter</a></i></span> Project!
+            <br/>
+            <small>Integrating <p:link value="Primefaces" href="http://primefaces.org"/>, <p:link value="Bootstrap"
+                                                                                                  href="http://getbootstrap.com/"/> and
+                <p:link value="Admin LTE" href="https://almsaeedstudio.com/themes/AdminLTE/index2.html/"/> into your
+                <p:link value="JSF" href="https://javaserverfaces.java.net/"/> application.
+            </small>
+        </h2>
+    </ui:define>
+
+    <ui:define name="description">
+        
+    </ui:define>
+
+    <ui:define name="body">
+    	<h2>Editar Profesor</h2>
+    	
+    	<h:form>
+	    <p:panel id="panel"  style="margin-bottom:10px;">
+        <p:messages id="messages" />
+        <h:panelGrid columns="2" cellpadding="5">
+		        <p:outputLabel value="Usuario: " for="usuario" />
+		        <p:outputLabel id="usuario" value="#{profesorBean.profesor.idprofesor}"/>
+		        
+		 
+		        <p:outputLabel value="Nombre: " for="nombre" />
+		        <p:inputText id="nombre" requiredMessage="Es necesario un nombre" required="true" value="#{profesorBean.profesor.usuario}"/>
+		        
+		 
+		        <p:outputLabel value="Visibilidad:" for="visibilidad" />
+		        <p:selectBooleanButton id="visibilidad" value="#{profesorBean.profesor.visibilidad}" onLabel="Si" offLabel="No" onIcon="ui-icon-check" offIcon="ui-icon-close" style="width:100px">
+           
+        		</p:selectBooleanButton>
+        		</h:panelGrid>
+    
+     		 <p/>
+			 <fc:selectListaEspacios espacios="#{profesorBean.espacios}">
+			 
+			 </fc:selectListaEspacios>
+			 </p:panel>
+			 <h:commandButton id="profesorSubmit" styleClass="btn btn-info" value="Actualizar" action="#{profesorBean.actualizaProfesor}" style="margin-top:5px" />
+  			<h:commandButton id="salirSubmit" styleClass="btn btn-info" value="Salir" action="#{profesorBean.volver()}" style="margin-top:5px" immediate="true"/>
+ 
+		 </h:form>
+    </ui:define>
+
+
+    <ui:define name="footer">
+    	<ui:include src="/WEB-INF/templates/footer.xhtml"/>
+    </ui:define>
+
+
+</ui:composition>

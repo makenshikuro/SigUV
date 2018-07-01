@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+
+    Copyright (c) 2014 Oracle and/or its affiliates. All rights reserved.
+
+    You may not modify, use, reproduce, or distribute this software except in
+    compliance with  the terms of the License at:
+    http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+	<cc:attribute name="edificiosBean" />
+	
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+
+ 		<p/>
+ 	
+<!--  		<h:dataTable var="e" -->
+<!--                          summary="Edificio" -->
+<!--                          value="#{cc.attrs.edificiosBean.edificios}" -->
+<!--                          rules="all" -->
+<!--                          cellpadding="5"> -->
+<!--                 <h:column> -->
+<!--                     <f:facet name="header"> -->
+<!--                         <h:outputText value="Edificio"/> -->
+<!--                     </f:facet> -->
+                    
+<!--                     <h:commandLink action="#{espacioBean.consultaEspacios(e.idedificio)}" value="#{e.idedificio}" /> -->
+<!--                 </h:column> -->
+                
+<!--                 <h:column> -->
+<!--                     <f:facet name="header"> -->
+<!--                         <h:outputText value="Editar" /> -->
+<!--                     </f:facet> -->
+<!--                     <h:commandButton action="#{edificioBean.editarEdificio(e.idedificio)}" value="Editar a #{e.idedificio}" /> -->
+                   
+<!--                 </h:column> -->
+<!--                 <h:column> -->
+<!--                     <f:facet name="header"> -->
+<!--                         <h:outputText value="Eliminar" /> -->
+<!--                     </f:facet> -->
+<!--                     <h:commandButton action="#{edificioBean.eliminaEdificio(e.idedificio)}" onConfirmComplete="#{edificioBean.reload()}" value="Eliminar a #{e.idedificio}" /> -->
+                   
+<!--                 </h:column> -->
+<!--           </h:dataTable> -->
+ <p:dataTable id="edificio" var="p" value="#{edificioBean.edificios}" widgetVar="carsTable"
+ 		selection="#{edificioBean.selectedEdificio}" selectionMode="single" rowKey="#{p.idedificio}" 
+ 		emptyMessage="Ningun Edificio coincide con los criterios" filteredValue="#{edificioBean.filtroEdificio}">
+ 		
+ 		<p:column filterBy="#{p.idedificio}" headerText="Edificio" footerText="" filterMatchMode="contains"> 
+            
+             
+<!--              <h:commandLink action="#{espacioBean.consultaEspacios(p.idedificio)}" value="#{p.idedificio}" /> -->
+		<p:outputLabel value="#{p.idedificio}"/>
+            
+        </p:column>
+        <p:column filterBy="#{p.nombrees}" headerText="Nombre" footerText="" filterMatchMode="contains"> 
+            
+             
+<!--              <h:commandLink action="#{espacioBean.consultaEspacios(p.idedificio)}" value="#{p.idedificio}" /> -->
+             <p:outputLabel value="#{p.nombrees}" />
+        </p:column>
+        
+ 		</p:dataTable>
+ 		
+ 		 <p:contextMenu for="edificio">
+        <p:menuitem value="Ir a Espacios" icon="fa fa-fw fa-edit" action="#{espacioBean.consultaEspacios(edificioBean.selectedEdificio.idedificio)}"/>
+        
+        <p:menuitem value="Editar Edificio" icon="fa fa-fw fa-edit" action="#{edificioBean.editarEdificio(edificioBean.selectedEdificio.idedificio)}"/>
+        
+        
+        <p:menuitem value="Borrar Edificio" icon="fa fa-fw fa-times-circle" action="#{edificioBean.eliminaEdificio(edificioBean.selectedEdificio.idedificio)}">
+        	<p:confirm header="Confirmation" message="Estás seguro que desea borrar el profesor [ #{edificioBean.selectedEdificio.idedificio} ] ?" icon="ui-icon-alert" />
+   
+        </p:menuitem>
+        
+    </p:contextMenu>
+   
+ 		 <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+        <p:commandButton value="Sí" type="button" styleClass="ui-confirmdialog-yes" icon="fa fa-check" />
+        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="fa fa-times-circle" />
+    </p:confirmDialog>
+		
+ 		 
+            
+        <p/>
+  
+    </cc:implementation>
+
+</html>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.2" sequence="0" timestamp="1525384441066" analysisTimestamp="1527455023203" release="">
+  <Project>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\CoordenadaDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\CoordenadaDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\DAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\DAOFactory$TYPE.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\DAOFactory.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\DAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\EdificioDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\EdificioDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\EspacioDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\EspacioDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\JPADAOFactory.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\PanoramaDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\PanoramaDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\PlanoDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\PlanoDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\ProfesorDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\ProfesorDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\UsuarioDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\DAO\UsuarioDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Coordenada.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Edificio.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Espacio.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Panorama.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\PanoramaPK.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Plano.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\PlanoPK.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Profesor.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\entity\Usuario.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\init\Main.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\build\classes\services\ProjectsService.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\edificioBean.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$1.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$10.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$11.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$12.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$13.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$2.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$3.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$4.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$5.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$6.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$7.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$8.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean$9.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\EJBean.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\espacioBean.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\infoBean.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\profesorBean.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\UserMB.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\bean\usuarioBean.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Coordenada.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Edificio.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Espacio.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Imagen.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Panorama.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Plano.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\PlanoPK.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Profesor.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\entity\Usuario.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\serializer\EdificioDeserializer.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\serializer\EdificioSerializer.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\serializer\EspacioSerializer.class</Jar>
+    <Jar>D:\eclipse-workspace\siguv\target\classes\serializer\ProfesorSerializer.class</Jar>
+    <AuxClasspathEntry>D:\eclipse-workspace\siguv</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-workspace\siguv\.scannerwork\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-workspace\siguv\.scannerwork\findbugs\jsr305.jar</AuxClasspathEntry>
+    <WrkDir>D:\eclipse-workspace\siguv\.scannerwork</WrkDir>
+  </Project>
+  <Errors errors="0" missingClasses="32">
+    <MissingClass>com.google.gson.Gson</MissingClass>
+    <MissingClass>com.google.gson.GsonBuilder</MissingClass>
+    <MissingClass>com.google.gson.JsonArray</MissingClass>
+    <MissingClass>com.google.gson.JsonDeserializer</MissingClass>
+    <MissingClass>com.google.gson.JsonElement</MissingClass>
+    <MissingClass>com.google.gson.JsonObject</MissingClass>
+    <MissingClass>com.google.gson.JsonSerializer</MissingClass>
+    <MissingClass>com.google.gson.reflect.TypeToken</MissingClass>
+    <MissingClass>javax.faces.context.ExternalContext</MissingClass>
+    <MissingClass>javax.faces.context.FacesContext</MissingClass>
+    <MissingClass>javax.persistence.EntityManager</MissingClass>
+    <MissingClass>javax.persistence.EntityManagerFactory</MissingClass>
+    <MissingClass>javax.persistence.EntityTransaction</MissingClass>
+    <MissingClass>javax.persistence.Persistence</MissingClass>
+    <MissingClass>javax.persistence.Query</MissingClass>
+    <MissingClass>javax.servlet.http.HttpServletRequest</MissingClass>
+    <MissingClass>javax.servlet.http.HttpSession</MissingClass>
+    <MissingClass>javax.ws.rs.client.Client</MissingClass>
+    <MissingClass>javax.ws.rs.client.ClientBuilder</MissingClass>
+    <MissingClass>javax.ws.rs.client.Entity</MissingClass>
+    <MissingClass>javax.ws.rs.client.Invocation$Builder</MissingClass>
+    <MissingClass>javax.ws.rs.client.WebTarget</MissingClass>
+    <MissingClass>javax.ws.rs.core.MediaType</MissingClass>
+    <MissingClass>javax.ws.rs.core.MultivaluedMap</MissingClass>
+    <MissingClass>javax.ws.rs.core.Response</MissingClass>
+    <MissingClass>javax.ws.rs.core.Response$ResponseBuilder</MissingClass>
+    <MissingClass>org.jboss.resteasy.plugins.providers.multipart.InputPart</MissingClass>
+    <MissingClass>org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput</MissingClass>
+    <MissingClass>org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataOutput</MissingClass>
+    <MissingClass>org.primefaces.event.FileUploadEvent</MissingClass>
+    <MissingClass>org.primefaces.model.DualListModel</MissingClass>
+    <MissingClass>org.primefaces.model.UploadedFile</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 3 May 2018 23:54:01 +0200" total_classes="55" referenced_classes="96" total_bugs="0" total_size="2401" num_packages="6" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="26.03" clock_seconds="6.30" peak_mbytes="885.07" alloc_mbytes="4096.00" gc_seconds="0.21">
+    <FileStats path="DAO/CoordenadaDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/CoordenadaDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/DAO.java" bugCount="0" size="8"/>
+    <FileStats path="DAO/DAOFactory.java" bugCount="0" size="26"/>
+    <FileStats path="DAO/DAOImpl.java" bugCount="0" size="36"/>
+    <FileStats path="DAO/EdificioDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/EdificioDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/EspacioDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/EspacioDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/JPADAOFactory.java" bugCount="0" size="21"/>
+    <FileStats path="DAO/PanoramaDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/PanoramaDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/PlanoDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/PlanoDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/ProfesorDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/ProfesorDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/UsuarioDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/UsuarioDAOImpl.java" bugCount="0" size="14"/>
+    <FileStats path="bean/EJBean.java" bugCount="0" size="538"/>
+    <FileStats path="bean/UserMB.java" bugCount="0" size="22"/>
+    <FileStats path="bean/edificioBean.java" bugCount="0" size="278"/>
+    <FileStats path="bean/espacioBean.java" bugCount="0" size="307"/>
+    <FileStats path="bean/infoBean.java" bugCount="0" size="65"/>
+    <FileStats path="bean/profesorBean.java" bugCount="0" size="128"/>
+    <FileStats path="bean/usuarioBean.java" bugCount="0" size="120"/>
+    <FileStats path="entity/Coordenada.java" bugCount="0" size="51"/>
+    <FileStats path="entity/Edificio.java" bugCount="0" size="107"/>
+    <FileStats path="entity/Espacio.java" bugCount="0" size="91"/>
+    <FileStats path="entity/Imagen.java" bugCount="0" size="51"/>
+    <FileStats path="entity/Panorama.java" bugCount="0" size="35"/>
+    <FileStats path="entity/PanoramaPK.java" bugCount="0" size="32"/>
+    <FileStats path="entity/Plano.java" bugCount="0" size="35"/>
+    <FileStats path="entity/PlanoPK.java" bugCount="0" size="32"/>
+    <FileStats path="entity/Profesor.java" bugCount="0" size="29"/>
+    <FileStats path="entity/Usuario.java" bugCount="0" size="35"/>
+    <FileStats path="init/Main.java" bugCount="0" size="10"/>
+    <FileStats path="serializer/EdificioDeserializer.java" bugCount="0" size="54"/>
+    <FileStats path="serializer/EdificioSerializer.java" bugCount="0" size="39"/>
+    <FileStats path="serializer/EspacioSerializer.java" bugCount="0" size="54"/>
+    <FileStats path="serializer/ProfesorSerializer.java" bugCount="0" size="18"/>
+    <FileStats path="services/ProjectsService.java" bugCount="0" size="34"/>
+    <PackageStats package="DAO" total_bugs="0" total_types="19" total_size="236">
+      <ClassStats class="DAO.CoordenadaDAO" sourceFile="CoordenadaDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.CoordenadaDAOImpl" sourceFile="CoordenadaDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.DAO" sourceFile="DAO.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="DAO.DAOFactory" sourceFile="DAOFactory.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.DAOFactory$TYPE" sourceFile="DAOFactory.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="DAO.DAOImpl" sourceFile="DAOImpl.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="DAO.EdificioDAO" sourceFile="EdificioDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.EdificioDAOImpl" sourceFile="EdificioDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.EspacioDAO" sourceFile="EspacioDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.EspacioDAOImpl" sourceFile="EspacioDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.JPADAOFactory" sourceFile="JPADAOFactory.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="DAO.PanoramaDAO" sourceFile="PanoramaDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.PanoramaDAOImpl" sourceFile="PanoramaDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.PlanoDAO" sourceFile="PlanoDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.PlanoDAOImpl" sourceFile="PlanoDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.ProfesorDAO" sourceFile="ProfesorDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.ProfesorDAOImpl" sourceFile="ProfesorDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.UsuarioDAO" sourceFile="UsuarioDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.UsuarioDAOImpl" sourceFile="UsuarioDAOImpl.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="bean" total_bugs="0" total_types="20" total_size="1458">
+      <ClassStats class="bean.EJBean" sourceFile="EJBean.java" interface="false" size="323" bugs="0"/>
+      <ClassStats class="bean.EJBean$1" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$10" sourceFile="EJBean.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="bean.EJBean$11" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$12" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$13" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$2" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$3" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$4" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$5" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$6" sourceFile="EJBean.java" interface="false" size="58" bugs="0"/>
+      <ClassStats class="bean.EJBean$7" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.EJBean$8" sourceFile="EJBean.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="bean.EJBean$9" sourceFile="EJBean.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="bean.UserMB" sourceFile="UserMB.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="bean.edificioBean" sourceFile="edificioBean.java" interface="false" size="278" bugs="0"/>
+      <ClassStats class="bean.espacioBean" sourceFile="espacioBean.java" interface="false" size="307" bugs="0"/>
+      <ClassStats class="bean.infoBean" sourceFile="infoBean.java" interface="false" size="65" bugs="0"/>
+      <ClassStats class="bean.profesorBean" sourceFile="profesorBean.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="bean.usuarioBean" sourceFile="usuarioBean.java" interface="false" size="120" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="entity" total_bugs="0" total_types="10" total_size="498">
+      <ClassStats class="entity.Coordenada" sourceFile="Coordenada.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="entity.Edificio" sourceFile="Edificio.java" interface="false" size="107" bugs="0"/>
+      <ClassStats class="entity.Espacio" sourceFile="Espacio.java" interface="false" size="91" bugs="0"/>
+      <ClassStats class="entity.Imagen" sourceFile="Imagen.java" interface="false" size="51" bugs="0"/>
+      <ClassStats class="entity.Panorama" sourceFile="Panorama.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="entity.PanoramaPK" sourceFile="PanoramaPK.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="entity.Plano" sourceFile="Plano.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="entity.PlanoPK" sourceFile="PlanoPK.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="entity.Profesor" sourceFile="Profesor.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="entity.Usuario" sourceFile="Usuario.java" interface="false" size="35" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="init" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="init.Main" sourceFile="Main.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="serializer" total_bugs="0" total_types="4" total_size="165">
+      <ClassStats class="serializer.EdificioDeserializer" sourceFile="EdificioDeserializer.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="serializer.EdificioSerializer" sourceFile="EdificioSerializer.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="serializer.EspacioSerializer" sourceFile="EspacioSerializer.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="serializer.ProfesorSerializer" sourceFile="ProfesorSerializer.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="services" total_bugs="0" total_types="1" total_size="34">
+      <ClassStats class="services.ProjectsService" sourceFile="ProjectsService.java" interface="false" size="34" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="242" invocations="475" avgMicrosecondsPerInvocation="511" maxMicrosecondsPerInvocation="29253" standardDeviationMicrosecondsPerInvocation="2122"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="224" invocations="589" avgMicrosecondsPerInvocation="381" maxMicrosecondsPerInvocation="12856" standardDeviationMicrosecondsPerInvocation="915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="208" invocations="475" avgMicrosecondsPerInvocation="439" maxMicrosecondsPerInvocation="19967" standardDeviationMicrosecondsPerInvocation="1481"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="182" invocations="593" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="9769" standardDeviationMicrosecondsPerInvocation="420"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="180" invocations="475" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="14125" standardDeviationMicrosecondsPerInvocation="1270"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="179" invocations="468" avgMicrosecondsPerInvocation="383" maxMicrosecondsPerInvocation="10281" standardDeviationMicrosecondsPerInvocation="894"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="160" invocations="478" avgMicrosecondsPerInvocation="336" maxMicrosecondsPerInvocation="12442" standardDeviationMicrosecondsPerInvocation="1043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="145" invocations="482" avgMicrosecondsPerInvocation="301" maxMicrosecondsPerInvocation="11757" standardDeviationMicrosecondsPerInvocation="956"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="144" invocations="96" avgMicrosecondsPerInvocation="1503" maxMicrosecondsPerInvocation="25708" standardDeviationMicrosecondsPerInvocation="3614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="119" invocations="55" avgMicrosecondsPerInvocation="2175" maxMicrosecondsPerInvocation="99390" standardDeviationMicrosecondsPerInvocation="13328"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="111" invocations="610" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="4487" standardDeviationMicrosecondsPerInvocation="412"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="111" invocations="96" avgMicrosecondsPerInvocation="1161" maxMicrosecondsPerInvocation="9920" standardDeviationMicrosecondsPerInvocation="2094"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="107" invocations="230" avgMicrosecondsPerInvocation="465" maxMicrosecondsPerInvocation="10926" standardDeviationMicrosecondsPerInvocation="1095"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="106" invocations="517" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="11512" standardDeviationMicrosecondsPerInvocation="647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="69" invocations="517" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="37933" standardDeviationMicrosecondsPerInvocation="1665"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.command.CommandInjectionDetector" totalMilliseconds="66" invocations="55" avgMicrosecondsPerInvocation="1217" maxMicrosecondsPerInvocation="40120" standardDeviationMicrosecondsPerInvocation="5521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="61" invocations="155" avgMicrosecondsPerInvocation="399" maxMicrosecondsPerInvocation="5685" standardDeviationMicrosecondsPerInvocation="853"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="48" invocations="179" avgMicrosecondsPerInvocation="272" maxMicrosecondsPerInvocation="19753" standardDeviationMicrosecondsPerInvocation="1532"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="43" invocations="475" avgMicrosecondsPerInvocation="92" maxMicrosecondsPerInvocation="4586" standardDeviationMicrosecondsPerInvocation="304"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="43" invocations="96" avgMicrosecondsPerInvocation="455" maxMicrosecondsPerInvocation="8851" standardDeviationMicrosecondsPerInvocation="1109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="42" invocations="96" avgMicrosecondsPerInvocation="445" maxMicrosecondsPerInvocation="10033" standardDeviationMicrosecondsPerInvocation="1160"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="41" invocations="96" avgMicrosecondsPerInvocation="435" maxMicrosecondsPerInvocation="10938" standardDeviationMicrosecondsPerInvocation="1385"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="41" invocations="55" avgMicrosecondsPerInvocation="753" maxMicrosecondsPerInvocation="8205" standardDeviationMicrosecondsPerInvocation="1464"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="40" invocations="6176" avgMicrosecondsPerInvocation="6" maxMicrosecondsPerInvocation="1381" standardDeviationMicrosecondsPerInvocation="27"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="38" invocations="55" avgMicrosecondsPerInvocation="703" maxMicrosecondsPerInvocation="10572" standardDeviationMicrosecondsPerInvocation="1657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="37" invocations="38" avgMicrosecondsPerInvocation="996" maxMicrosecondsPerInvocation="2145" standardDeviationMicrosecondsPerInvocation="735"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="35" invocations="55" avgMicrosecondsPerInvocation="650" maxMicrosecondsPerInvocation="8725" standardDeviationMicrosecondsPerInvocation="1313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="34" invocations="484" avgMicrosecondsPerInvocation="71" maxMicrosecondsPerInvocation="1532" standardDeviationMicrosecondsPerInvocation="144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="34" invocations="96" avgMicrosecondsPerInvocation="354" maxMicrosecondsPerInvocation="4740" standardDeviationMicrosecondsPerInvocation="677"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="32" invocations="96" avgMicrosecondsPerInvocation="342" maxMicrosecondsPerInvocation="13542" standardDeviationMicrosecondsPerInvocation="1403"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="32" invocations="55" avgMicrosecondsPerInvocation="589" maxMicrosecondsPerInvocation="5370" standardDeviationMicrosecondsPerInvocation="983"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.redirect.UnvalidatedRedirectDetector" totalMilliseconds="30" invocations="55" avgMicrosecondsPerInvocation="554" maxMicrosecondsPerInvocation="11470" standardDeviationMicrosecondsPerInvocation="1577"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.ScalaSensitiveDataExposureDetector" totalMilliseconds="29" invocations="55" avgMicrosecondsPerInvocation="543" maxMicrosecondsPerInvocation="11124" standardDeviationMicrosecondsPerInvocation="1571"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationAttributeDetector" totalMilliseconds="29" invocations="55" avgMicrosecondsPerInvocation="543" maxMicrosecondsPerInvocation="11031" standardDeviationMicrosecondsPerInvocation="1555"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.ldap.LdapInjectionDetector" totalMilliseconds="29" invocations="55" avgMicrosecondsPerInvocation="539" maxMicrosecondsPerInvocation="10897" standardDeviationMicrosecondsPerInvocation="1554"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="28" invocations="11726" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="37" standardDeviationMicrosecondsPerInvocation="1"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xpath.XPathInjectionDetector" totalMilliseconds="28" invocations="55" avgMicrosecondsPerInvocation="517" maxMicrosecondsPerInvocation="11069" standardDeviationMicrosecondsPerInvocation="1518"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="27" invocations="96" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="4656" standardDeviationMicrosecondsPerInvocation="671"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.custom.CustomInjectionDetector" totalMilliseconds="27" invocations="55" avgMicrosecondsPerInvocation="501" maxMicrosecondsPerInvocation="10492" standardDeviationMicrosecondsPerInvocation="1454"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.SqlInjectionDetector" totalMilliseconds="27" invocations="55" avgMicrosecondsPerInvocation="493" maxMicrosecondsPerInvocation="9981" standardDeviationMicrosecondsPerInvocation="1388"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.ScriptInjectionDetector" totalMilliseconds="27" invocations="55" avgMicrosecondsPerInvocation="491" maxMicrosecondsPerInvocation="10178" standardDeviationMicrosecondsPerInvocation="1398"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xml.StdXmlTransformDetector" totalMilliseconds="26" invocations="55" avgMicrosecondsPerInvocation="487" maxMicrosecondsPerInvocation="9956" standardDeviationMicrosecondsPerInvocation="1369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="26" invocations="55" avgMicrosecondsPerInvocation="478" maxMicrosecondsPerInvocation="8072" standardDeviationMicrosecondsPerInvocation="1137"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.OgnlInjectionDetector" totalMilliseconds="26" invocations="55" avgMicrosecondsPerInvocation="477" maxMicrosecondsPerInvocation="9088" standardDeviationMicrosecondsPerInvocation="1257"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.ExternalConfigurationControlDetector" totalMilliseconds="26" invocations="55" avgMicrosecondsPerInvocation="475" maxMicrosecondsPerInvocation="9290" standardDeviationMicrosecondsPerInvocation="1308"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.SSRFDetector" totalMilliseconds="25" invocations="55" avgMicrosecondsPerInvocation="463" maxMicrosecondsPerInvocation="6972" standardDeviationMicrosecondsPerInvocation="1084"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="25" invocations="55" avgMicrosecondsPerInvocation="460" maxMicrosecondsPerInvocation="3255" standardDeviationMicrosecondsPerInvocation="626"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.XssTwirlDetector" totalMilliseconds="25" invocations="55" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="7243" standardDeviationMicrosecondsPerInvocation="1107"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationValueDetector" totalMilliseconds="24" invocations="55" avgMicrosecondsPerInvocation="450" maxMicrosecondsPerInvocation="7031" standardDeviationMicrosecondsPerInvocation="1074"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.crlf.CrlfLogInjectionDetector" totalMilliseconds="24" invocations="55" avgMicrosecondsPerInvocation="448" maxMicrosecondsPerInvocation="8753" standardDeviationMicrosecondsPerInvocation="1221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="24" invocations="468" avgMicrosecondsPerInvocation="52" maxMicrosecondsPerInvocation="1475" standardDeviationMicrosecondsPerInvocation="132"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.XssMvcApiDetector" totalMilliseconds="24" invocations="55" avgMicrosecondsPerInvocation="443" maxMicrosecondsPerInvocation="6351" standardDeviationMicrosecondsPerInvocation="1014"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.HttpResponseSplittingDetector" totalMilliseconds="24" invocations="55" avgMicrosecondsPerInvocation="443" maxMicrosecondsPerInvocation="8690" standardDeviationMicrosecondsPerInvocation="1209"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="23" invocations="468" avgMicrosecondsPerInvocation="51" maxMicrosecondsPerInvocation="1068" standardDeviationMicrosecondsPerInvocation="101"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.aws.AwsQueryInjectionDetector" totalMilliseconds="23" invocations="55" avgMicrosecondsPerInvocation="427" maxMicrosecondsPerInvocation="5840" standardDeviationMicrosecondsPerInvocation="937"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.fileDisclosure.FileDisclosureDetector" totalMilliseconds="23" invocations="55" avgMicrosecondsPerInvocation="426" maxMicrosecondsPerInvocation="5877" standardDeviationMicrosecondsPerInvocation="953"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.beans.BeanInjectionDetector" totalMilliseconds="23" invocations="55" avgMicrosecondsPerInvocation="425" maxMicrosecondsPerInvocation="5782" standardDeviationMicrosecondsPerInvocation="938"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.formatter.FormatStringManipulationDetector" totalMilliseconds="22" invocations="55" avgMicrosecondsPerInvocation="414" maxMicrosecondsPerInvocation="5779" standardDeviationMicrosecondsPerInvocation="938"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

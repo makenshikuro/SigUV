@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+			    xmlns:f="http://xmlns.jcp.org/jsf/core"
+			    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+			    xmlns:fc="http://xmlns.jcp.org/jsf/composite/components"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/templates/admin.xhtml">
+
+    <ui:define name="head">
+        <title>Admin Starter</title>
+    </ui:define>
+
+    <ui:define name="logo-lg">
+        Admin Starter
+    </ui:define>
+
+    <ui:define name="logo-mini">
+        Admin
+    </ui:define>
+
+     <ui:define name="menu">
+        <ui:include src="/WEB-INF/templates/menu-sidebar.xhtml"/>
+     </ui:define>
+
+    <ui:define name="top-menu">
+        <ui:include src="/WEB-INF/templates/top-bar.xhtml"/>
+    </ui:define>
+
+      <ui:define name="title">
+        <h2 class="align-center">
+            Welcome to the <span class="text-aqua"> <i><a href="https://github.com/adminfaces/admin-starter" target="_blank"
+                                                          style="text-transform: none;text-decoration: none"> AdminFaces Starter</a></i></span> Project!
+            <br/>
+            <small>Integrating <p:link value="Primefaces" href="http://primefaces.org"/>, <p:link value="Bootstrap"
+                                                                                                  href="http://getbootstrap.com/"/> and
+                <p:link value="Admin LTE" href="https://almsaeedstudio.com/themes/AdminLTE/index2.html/"/> into your
+                <p:link value="JSF" href="https://javaserverfaces.java.net/"/> application.
+            </small>
+        </h2>
+    </ui:define>
+
+    <ui:define name="description">
+        
+    </ui:define>
+
+    <ui:define name="body">
+    	<h2>Espacios de #{espacioBean.edificio.nombrees}</h2>
+    	<h:form>
+            <p><h:commandButton styleClass="btn btn-info"  value="Nuevo Espacio" action="#{espacioBean.crearEspacio()}" ajax="false"/></p> 
+           
+           
+           <p:dataTable id="espacio" var="p" value="#{espacioBean.espacios}" widgetVar="carsTable"
+ 		 selection="#{espacioBean.selectedEspacio}" selectionMode="single" rowKey="#{p.idespacio}" 
+ 		emptyMessage="Ningun Espacio coincide con los criterios" filteredValue="#{espacioBean.filtroEspacio}">
+ 		
+ 		<p:ajax event="rowSelect" listener="#{espacioBean.onRowSelect}"  />
+   
+ 		<p:column filterBy="#{p.idespacio}" headerText="Espacio" footerText="" filterMatchMode="contains">   
+        	<p:outputLabel value="#{p.idespacio}"/>
+        </p:column>
+        
+        <p:column filterBy="#{p.nombrees}" headerText="Nombre" footerText="" filterMatchMode="contains"> 
+             <p:outputLabel value="#{p.nombrees}" />
+        </p:column>
+        
+        <p:column filterBy="#{p.bloque}" headerText="Bloque" footerText="" filterMatchMode="contains">
+            <h:outputText value="#{p.bloque}" />
+        </p:column>
+        <p:column filterBy="#{p.piso}" headerText="Piso" footerText="" filterMatchMode="contains">
+            
+            <h:outputText value="#{p.piso}" />
+        </p:column>
+    
+        <p:column filterBy="#{p.tipo}" headerText="Tipo" footerText="" filterMatchMode="in"> 
+            <f:facet name="filter">
+                <p:selectCheckboxMenu label="tipo" onchange="PF('carsTable').filter()"  >
+	                <f:selectItem itemLabel="Despacho" itemValue="despacho" />
+	                <f:selectItem itemLabel="Aula" itemValue="aula" />
+	                <f:selectItem itemLabel="Laboratorio" itemValue="laboratorio" />
+                    
+                </p:selectCheckboxMenu>
+            </f:facet>
+             
+             <p:outputLabel value="#{p.tipo}" />
+        </p:column>
+        <p:column filterBy="#{p.visibilidad}" headerText="Estado" footerText="" filterMatchMode="equals"> 
+            <f:facet name="filter" >
+                <p:selectOneButton onchange="PF('carsTable').filter()">
+                    <f:converter converterId="javax.faces.Boolean" />
+                    <f:selectItem itemLabel="Todos" itemValue="" />
+                    <f:selectItem itemLabel="Sí" itemValue="true" />
+                    <f:selectItem itemLabel="No" itemValue="false" />
+                </p:selectOneButton>
+            </f:facet>
+            <h:outputText value="#{p.visibilidad ? 'Sí': 'No'}" />
+             
+        </p:column>
+        
+        
+        
+ 		</p:dataTable>
+ 		
+ 	<p:contextMenu for="espacio">
+        
+        <p:menuitem value="Editar Espacio" icon="fa fa-fw fa-edit" action="#{espacioBean.editarEspacio(espacioBean.selectedEspacio.idespacio)}"/>
+        
+        
+        <p:menuitem value="Borrar Espacio" icon="fa fa-fw fa-times-circle" action="#{espacioBean.eliminaEspacio(espacioBean.selectedEspacio.idespacio)}">
+        	<p:confirm header="Confirmation" message="Estás seguro que desea borrar el edificio [ #{espacioBean.selectedEspacio.idespacio} ] ?" icon="ui-icon-alert" />
+   
+        </p:menuitem>
+        
+    </p:contextMenu>
+   
+ 		 <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+        <p:commandButton value="Sí" type="button" styleClass="ui-confirmdialog-yes" icon="fa fa-check" />
+        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="fa fa-times-circle" />
+    </p:confirmDialog>
+ 	
+ 		
+            
+            <p/>
+            <p><h:commandButton value="Atrás" styleClass="btn btn-info" action="#{espacioBean.volverEdificios()}" ajax="false"/></p>
+        </h:form>
+    </ui:define>
+
+
+    <ui:define name="footer">
+    	<ui:include src="/WEB-INF/templates/footer.xhtml"/>
+    </ui:define>
+
+
+</ui:composition>

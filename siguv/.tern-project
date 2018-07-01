@@ -1,0 +1,22 @@
+{
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "extjs5.0.0": {
+      
+    },
+    "bootstrap": {
+      
+    }
+  },
+  "libs": [
+    "ecma5",
+    "browser",
+    "jquery"
+  ],
+  "ecmaVersion": 6
+}

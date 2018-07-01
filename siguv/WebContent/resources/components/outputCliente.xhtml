@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+
+    Copyright (c) 2014 Oracle and/or its affiliates. All rights reserved.
+
+    You may not modify, use, reproduce, or distribute this software except in
+    compliance with  the terms of the License at:
+    http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jstl/core">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+	<cc:attribute name="reservaBean" />
+	
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+    	
+        
+       
+        <p/>
+   
+    	<h:outputText id="getdni" value="#{cc.attrs.reservaBean.dni}" />
+    	<p/>
+    	
+    	<h:outputText id="getnombre" value="#{cc.attrs.reservaBean.nombre}" />
+    	<p/>
+  
+    	<h:outputText id="getapellidos" value="#{cc.attrs.reservaBean.apellidos}"/>
+    	<p/>
+    	
+    	<h:outputText id="getdireccion" value="#{cc.attrs.reservaBean.direccion}"/>
+    	<p/>
+    
+    	<h:outputText id="getmovil" value="#{cc.attrs.reservaBean.movil}" />
+    	<p/>
+       
+    	<h:outputText id="gettarjeta" value="#{cc.attrs.reservaBean.tarjeta}" />
+    	<p/>
+   
+    	<h:outputText id="getemail" value="#{cc.attrs.reservaBean.email}" />
+    	<p/>
+    	
+    	<h:outputText id="getpassword" value="#{cc.attrs.reservaBean.pass}" />
+    	<p/>
+        <p/>
+        <p><h:outputText value="¿Quiere ser cliente habitual?"/></p>
+        <c:if test="#{cc.attrs.reservaBean.eshabitual}">
+    		<p>Sí</p>
+		</c:if>
+        
+         <p><h:outputText value="¿Quiere suscribirse a nuestra newsletter?"/></p>
+        <c:if test="#{cc.attrs.reservaBean.newsletter}">
+    		<p>Sí</p>
+		</c:if>
+        <p/>
+    	
+        
+       
+        
+        
+       
+    </cc:implementation>
+
+</html>

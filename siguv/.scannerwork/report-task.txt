@@ -1,0 +1,6 @@
+projectKey=client
+serverUrl=http://147.156.82.219:9000
+serverVersion=7.1.0.11001
+dashboardUrl=http://147.156.82.219:9000/dashboard/index/client
+ceTaskId=AWOjaiphOuKOrW0gb2dy
+ceTaskUrl=http://147.156.82.219:9000/api/ce/task?id=AWOjaiphOuKOrW0gb2dy

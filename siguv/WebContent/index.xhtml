@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ca" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<head>
+<title>SigUV</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css"></link>
+<!-- <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet"/> -->
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="css/leaflet.css"></link>
+<link rel="stylesheet" href="css/L.Control.Sidebar.css"></link>
+<link rel="stylesheet" href="css/leaflet-bootstrapmodal.css"></link>
+<link rel="stylesheet" href="css/leaflet.awesome-markers.css"></link>
+<link rel="stylesheet" href="css/easy-button.css"></link>
+<link rel="stylesheet" href="css/leaflet.modal.min.css"></link>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+
+<!-- Leaflet FA -->
+<link rel="stylesheet" href="css/estilo.css"></link>
+
+</head>
+
+<body>
+
+
+	<!-- Navigation -->
+	
+	<nav class="navbar navbar-dark bg-dark navbar-expand-md bg-faded justify-content-center">
+	<div class="container">
+	<div id="logo">
+		<a class="navbar-brand d-flex w-50 mr-auto" href="#">
+		    <img src="images/logoUVb.svg"  alt="Logotipo SigUV" id="logoUV" />
+		</a>
+	</div>
+	
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        
+         
+       
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+					<a class="nav-link" onclick="closeAllSidebars();Buscador();" data-colapse="true" data-toggle="modal" data-target="#myModal" href="#"> 
+						<span class="sr-only fas fa-search"></span> 
+						<span class="navbar-header-text">Buscador</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" onclick="openSidebarLayers();" data-colapse="true" href="#"> 
+						<span class="sr-only fas fa-list-ul"></span> 
+						<span class="navbar-header-text">Capas</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" onclick="openSidebarFacultades();" data-colapse="true" href="#">
+						<span class="sr-only fas fa-university"></span> 
+						<span class="navbar-header-text">Facultades</span>
+					</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="admin/">Admin</a>
+				</li>
+				
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          <span class="fas fa-cog"></span>
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="#" data-colapse="true" onclick="showLegend();"><i class="fas fa-info"></i><span class="navbar-header-text">Leyenda</span></a>
+			          <a class="dropdown-item" href="#" data-colapse="true" onclick="showHelp();"><i class="far fa-life-ring"></i><span class="navbar-header-text">Ayuda</span></a> 
+            
+			        </div>
+			    </li>
+				
+        </ul>
+    </div>
+    </div>
+</nav>
+
+	<!-- Page Content -->
+
+
+
+
+	<div id="map">
+	<div id="nivel" class="btn-group level" data-toggle="buttons">
+                 <label id="P0" class="btn btn-primary active">
+                     <input type="radio" name="nivel" value="0" autocomplete="off" checked="checked" /> PB
+                 </label>
+                 <label id="P1" class="btn btn-primary">
+                     <input type="radio" name="nivel" value="1" autocomplete="off"/> P1
+                 </label>
+                 <label id="P2" class="btn btn-primary">
+                     <input type="radio" name="nivel" value="2" autocomplete="off"/> P2
+                 </label>             
+                 <label id="P3" class="btn btn-primary">
+                     <input type="radio" name="nivel" value="3" autocomplete="off"/> P3
+                 </label>
+         </div></div>
+
+
+	<!-- Sidebars -->
+	<!-- Sidebar de Capas (Opciones) -->
+	<div id="sidebarLayers">
+		<div class="sidebar-header">
+			<div class="sidebar-header-img">
+				<i class="fas fa-th-list fa-2x"></i>
+<!-- 				<img src="images/layers-icon.png" alt="Icono Capas" /> -->
+			</div>
+
+			<div class="sidebar-header-text">Capas</div>
+		</div>
+		<div class="clearM2"></div>
+		
+		<div class="clearM2"></div>
+		
+		<div class="sidebar-toggle-group">
+			<div class="sidebar-toggle-text">Topónimos</div>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary ON large" id="topoON"> 
+				<input type="radio" name="denominacion" value="d" />
+					<div>
+						<div>
+							<img
+								alt="Imagen selecci&oacute;n modo &aacute;sico y por c&oacute;digo"
+								src="images/bd.png" />
+						</div>
+						<div>Descripción</div>
+					</div>
+				</label> <label class="btn btn-primary ON large" id="topoOFF"> 
+				<input type="radio" name="denominacion" value="c" />
+					<div>
+						<div>
+							<img
+								alt="Imagen selecci&oacute;n modo por categor&iacute;as y por c&oacute;digo"
+								src="images/cc.png" />
+						</div>
+						<div>Código</div>
+					</div>
+				</label>
+			</div>
+
+		</div>
+		<div class="clearM2"></div>
+		
+		<div class="sidebar-toggle-group">
+			<div class="sidebar-toggle-text">Iconos</div>
+			
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary ON active" id="iconsON"> <input
+					type="radio" name="icons" value="on" /> I
+				</label> <label class="btn btn-primary OFF" id="iconsOFF"> <input
+					type="radio" name="icons" value="off" /> O
+				</label>
+			</div>
+
+		</div>
+		<div class="clearM2"></div>
+		
+		
+	</div>
+	<!-- Fin Sidebar de Capas (Opciones) -->
+	<!-- Sidebar de Facultades -->
+	<div id="sidebarFacultades">
+		<div class="sidebar-header">
+			<div class="sidebar-header-icon">
+				<span class="fa fa-university"></span>
+			</div>
+			<div class="sidebar-header-text">Facultades</div>
+		</div>
+		<div class="clearM1"></div>
+		<div id="facultades"></div>
+	</div>
+	<!-- Fin Sidebar de Facultades -->
+
+	<!-- Sidebar de Información -->
+
+	<div id="sidebarInfo">
+		<div id="profesor-info"></div>
+	</div>
+
+	<!-- Fin Sidebar de Información -->
+
+	<!-- Fin Sidebars -->
+
+
+	<!-- Bootstrap core JavaScript -->
+
+
+
+	
+
+	<script src="js/fontawesome-all.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/handlebars-v4.0.11.js"></script>
+	<script src="js/raphael.min.js"></script>
+	<script src="js/typeahead.bundle.js"></script>
+	
+
+	<!-- Leaflet JS -->
+	<script src="js/leaflet.js"></script>
+
+	<!-- Leaflet Addons -->
+	<script src="js/Leaflet.ImageOverlay.Rotated.js"></script>
+	<script src="js/easy-button.js"></script>
+	<script src="js/Leaflet.Modal.min.js"></script>
+	<script src="js/leaflet.awesome-markers.min.js"></script>
+	<script src="js/L.Control.Sidebar.js"></script>
+	<script src="js/leaflet-bootstrapmodal.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/three-FullScreen.js"></script>
+	
+
+
+	<script src="js/init.js"></script>
+	<script src="js/webservices.js"></script>
+	<script src="js/mapas.js"></script>
+	<script src="js/typescript.js"></script>
+	<script src="js/panoramas.js"></script>
+	
+<!-- 	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script> -->
+
+
+
+
+</body>
+
+
+
+</html>

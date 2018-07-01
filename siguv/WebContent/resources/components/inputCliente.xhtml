@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+
+    Copyright (c) 2014 Oracle and/or its affiliates. All rights reserved.
+
+    You may not modify, use, reproduce, or distribute this software except in
+    compliance with  the terms of the License at:
+    http://java.net/projects/javaeetutorial/pages/BerkeleyLicense
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jstl/core">
+
+    <!-- INTERFACE -->
+    <cc:interface>
+	<cc:attribute name="reservaBean" />
+	
+    </cc:interface>
+
+    <!-- IMPLEMENTATION -->
+    <cc:implementation>
+    	
+        
+       
+        <p/>
+        <h:outputText value="DNI"/>
+    	<h:inputText id="getdni" value="#{cc.attrs.reservaBean.dni}" required="true"/>
+    	<p/>
+    	<h:outputText value="Nombre"/>
+    	<h:inputText id="getnombre" value="#{cc.attrs.reservaBean.nombre}" required="true"/>
+    	<p/>
+    	 <h:outputText value="Apellidos"/>
+    	<h:inputText id="getapellidos" value="#{cc.attrs.reservaBean.apellidos}" required="true"/>
+    	<p/>
+    	 <h:outputText value="Direccion"/>
+    	<h:inputText id="getdireccion" value="#{cc.attrs.reservaBean.direccion}" required="true"/>
+    	<p/>
+        <h:outputText value="Movil"/>
+    	<h:inputText id="getmovil" value="#{cc.attrs.reservaBean.movil}" required="true"/>
+    	<p/>
+        <h:outputText value="Tarjeta"/>
+    	<h:inputText id="gettarjeta" value="#{cc.attrs.reservaBean.tarjeta}" required="true"/>
+    	<p/>
+    	<h:outputText value="Email"/>
+    	<h:inputText id="getemail" value="#{cc.attrs.reservaBean.email}" required="true"/>
+    	<p/>
+    	<h:outputText value="Password"/>
+    	<h:inputText id="getpassword" value="#{cc.attrs.reservaBean.pass}" required="true"/>
+    	<p/>
+        <p/>
+        <p><h:outputText value="¿Quiere ser cliente habitual?"/>
+        <h:selectBooleanCheckbox id="gethabitual" value="#{cc.attrs.reservaBean.eshabitual}" /></p>
+        
+        <p/>
+    	<p><h:outputText value="¿Quiere suscribirse a nuestra newsletter?"/>
+        <h:selectBooleanCheckbox id="getnewsletter" value="#{cc.attrs.reservaBean.newsletter}" /></p>
+        
+       
+        
+        
+       
+    </cc:implementation>
+
+</html>

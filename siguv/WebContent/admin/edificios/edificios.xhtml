@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+			    xmlns:f="http://xmlns.jcp.org/jsf/core"
+			    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+			    xmlns:fc="http://xmlns.jcp.org/jsf/composite/components"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/templates/admin.xhtml">
+
+    <ui:define name="head">
+        <title>Admin Starter</title>
+    </ui:define>
+
+    <ui:define name="logo-lg">
+        Admin Starter
+    </ui:define>
+
+    <ui:define name="logo-mini">
+        Admin
+    </ui:define>
+
+     <ui:define name="menu">
+        <ui:include src="/WEB-INF/templates/menu-sidebar.xhtml"/>
+     </ui:define>
+
+    <ui:define name="top-menu">
+        <ui:include src="/WEB-INF/templates/top-bar.xhtml"/>
+    </ui:define>
+
+    <ui:define name="title">
+        <h2 class="align-center">
+            Welcome to the <span class="text-aqua"> <i><a href="https://github.com/adminfaces/admin-starter" target="_blank"
+                                                          style="text-transform: none;text-decoration: none"> AdminFaces Starter</a></i></span> Project!
+            <br/>
+            <small>Integrating <p:link value="Primefaces" href="http://primefaces.org"/>, <p:link value="Bootstrap"
+                                                                                                  href="http://getbootstrap.com/"/> and
+                <p:link value="Admin LTE" href="https://almsaeedstudio.com/themes/AdminLTE/index2.html/"/> into your
+                <p:link value="JSF" href="https://javaserverfaces.java.net/"/> application.
+            </small>
+        </h2>
+    </ui:define>
+
+    <ui:define name="description">
+       
+    </ui:define>
+
+    <ui:define name="body">
+    	<h2>Edificios</h2>
+    	
+    	<h:form>
+        <p><h:commandButton rendered="#{userMB.userAdmin eq true}" styleClass="btn btn-info"  value="Nuevo Edificio" action="#{edificioBean.crearEdificio()}"/></p> 
+            
+        <p:dataTable id="edificio" var="p" value="#{edificioBean.edificios}" widgetVar="carsTable"
+ 		selection="#{edificioBean.selectedEdificio}" selectionMode="single" rowKey="#{p.idedificio}" 
+ 		emptyMessage="Ningun Edificio coincide con los criterios" filteredValue="#{edificioBean.filtroEdificio}">
+ 		
+ 		<p:ajax event="rowSelect" listener="#{edificioBean.onRowSelect}"  />
+ 		<p:column filterBy="#{p.idedificio}" headerText="Edificio" footerText="" filterMatchMode="contains"> 
+            
+             
+        <p:outputLabel value="#{p.idedificio}"/>
+            
+        </p:column>
+        <p:column filterBy="#{p.nombrees}" headerText="Nombre" footerText="" filterMatchMode="contains"> 
+            
+             
+             <p:outputLabel value="#{p.nombrees}" />
+        </p:column>
+        
+        
+        
+ 		</p:dataTable>
+ 		
+ 	<p:contextMenu for="edificio">
+        <p:menuitem value="Ir a Espacios" icon="fa fa-fw fa-edit" action="#{espacioBean.consultaEspacios(edificioBean.selectedEdificio.idedificio)}"/>
+        
+        
+        <p:menuitem rendered="#{userMB.userAdmin eq true}" value="Editar Edificio" icon="fa fa-fw fa-edit" action="#{edificioBean.editarEdificio(edificioBean.selectedEdificio.idedificio)}"/>
+        
+        
+        <p:menuitem value="Borrar Edificio" icon="fa fa-fw fa-times-circle" action="#{edificioBean.eliminaEdificio(edificioBean.selectedEdificio.idedificio)}">
+        	<p:confirm header="Confirmation" message="Estás seguro que desea borrar el edificio [ #{edificioBean.selectedEdificio.idedificio} ] ?" icon="ui-icon-alert" />
+   
+        </p:menuitem>
+        
+    </p:contextMenu>
+   
+ 		 <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+        <p:commandButton value="Sí" type="button" styleClass="ui-confirmdialog-yes" icon="fa fa-check" />
+        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="fa fa-times-circle" />
+    	</p:confirmDialog>
+            
+            <p/>
+            <p><h:commandButton value="Atrás" styleClass="btn btn-info" action="#{edificioBean.volverIndex()}"/></p>
+        </h:form>
+    </ui:define>
+
+
+   <ui:define name="footer">
+    	<ui:include src="/WEB-INF/templates/footer.xhtml"/>
+    </ui:define>
+
+
+</ui:composition>
