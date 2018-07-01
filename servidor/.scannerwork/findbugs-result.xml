@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.1.2" sequence="0" timestamp="1525961623239" analysisTimestamp="1527454911426" release="">
+  <Project>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\CoordenadaDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\CoordenadaDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\DAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\DAOFactory$TYPE.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\DAOFactory.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\DAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\EdificioDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\EdificioDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\EspacioDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\EspacioDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\JPADAOFactory.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\PanoramaDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\PanoramaDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\PlanoDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\PlanoDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\ProfesorDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\ProfesorDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\UsuarioDAO.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\DAO\UsuarioDAOImpl.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Coordenada.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Edificio.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Espacio.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Panorama.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Plano.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\PlanoPK.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Profesor.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\entity\Usuario.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\services\ProjectsService$1.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\services\ProjectsService$2.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\services\ProjectsService.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\utils\EdificioSerializer.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\utils\EspacioSerializer.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\utils\Imagen.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\utils\ProfesorSerializer.class</Jar>
+    <Jar>D:\eclipse-workspace\servidor\target\classes\utils\UsuarioSerializer.class</Jar>
+    <AuxClasspathEntry>D:\eclipse-workspace\servidor</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-workspace\servidor\.scannerwork\findbugs\annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>D:\eclipse-workspace\servidor\.scannerwork\findbugs\jsr305.jar</AuxClasspathEntry>
+    <WrkDir>D:\eclipse-workspace\servidor\.scannerwork</WrkDir>
+  </Project>
+  <Errors errors="0" missingClasses="35">
+    <MissingClass>com.fasterxml.jackson.core.JsonProcessingException</MissingClass>
+    <MissingClass>com.fasterxml.jackson.databind.ObjectMapper</MissingClass>
+    <MissingClass>com.fasterxml.jackson.databind.ObjectWriter</MissingClass>
+    <MissingClass>com.fasterxml.jackson.databind.SerializationFeature</MissingClass>
+    <MissingClass>com.google.gson.Gson</MissingClass>
+    <MissingClass>com.google.gson.GsonBuilder</MissingClass>
+    <MissingClass>com.google.gson.JsonArray</MissingClass>
+    <MissingClass>com.google.gson.JsonDeserializer</MissingClass>
+    <MissingClass>com.google.gson.JsonElement</MissingClass>
+    <MissingClass>com.google.gson.JsonObject</MissingClass>
+    <MissingClass>com.google.gson.JsonParser</MissingClass>
+    <MissingClass>com.google.gson.JsonSerializer</MissingClass>
+    <MissingClass>javax.mail.Message$RecipientType</MissingClass>
+    <MissingClass>javax.mail.Session</MissingClass>
+    <MissingClass>javax.mail.Transport</MissingClass>
+    <MissingClass>javax.mail.internet.InternetAddress</MissingClass>
+    <MissingClass>javax.mail.internet.MimeMessage</MissingClass>
+    <MissingClass>javax.persistence.EntityManager</MissingClass>
+    <MissingClass>javax.persistence.EntityManagerFactory</MissingClass>
+    <MissingClass>javax.persistence.Persistence</MissingClass>
+    <MissingClass>javax.persistence.Query</MissingClass>
+    <MissingClass>javax.persistence.TypedQuery</MissingClass>
+    <MissingClass>javax.ws.rs.core.MediaType</MissingClass>
+    <MissingClass>javax.ws.rs.core.MultivaluedMap</MissingClass>
+    <MissingClass>javax.ws.rs.core.Response</MissingClass>
+    <MissingClass>javax.ws.rs.core.Response$ResponseBuilder</MissingClass>
+    <MissingClass>org.apache.commons.text.WordUtils</MissingClass>
+    <MissingClass>org.jboss.resteasy.plugins.providers.multipart.InputPart</MissingClass>
+    <MissingClass>org.jboss.resteasy.plugins.providers.multipart.MultipartFormDataInput</MissingClass>
+    <MissingClass>org.jsoup.Connection</MissingClass>
+    <MissingClass>org.jsoup.Jsoup</MissingClass>
+    <MissingClass>org.jsoup.nodes.Document</MissingClass>
+    <MissingClass>org.jsoup.nodes.Element</MissingClass>
+    <MissingClass>org.jsoup.select.Elements</MissingClass>
+    <MissingClass>org.postgis.Polygon</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 10 May 2018 16:13:43 +0200" total_classes="35" referenced_classes="79" total_bugs="0" total_size="1574" num_packages="4" java_version="1.8.0_121" vm_version="25.121-b13" cpu_seconds="23.97" clock_seconds="5.79" peak_mbytes="559.71" alloc_mbytes="4096.00" gc_seconds="0.17">
+    <FileStats path="DAO/CoordenadaDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/CoordenadaDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/DAO.java" bugCount="0" size="8"/>
+    <FileStats path="DAO/DAOFactory.java" bugCount="0" size="26"/>
+    <FileStats path="DAO/DAOImpl.java" bugCount="0" size="29"/>
+    <FileStats path="DAO/EdificioDAO.java" bugCount="0" size="8"/>
+    <FileStats path="DAO/EdificioDAOImpl.java" bugCount="0" size="27"/>
+    <FileStats path="DAO/EspacioDAO.java" bugCount="0" size="9"/>
+    <FileStats path="DAO/EspacioDAOImpl.java" bugCount="0" size="38"/>
+    <FileStats path="DAO/JPADAOFactory.java" bugCount="0" size="21"/>
+    <FileStats path="DAO/PanoramaDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/PanoramaDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/PlanoDAO.java" bugCount="0" size="5"/>
+    <FileStats path="DAO/PlanoDAOImpl.java" bugCount="0" size="16"/>
+    <FileStats path="DAO/ProfesorDAO.java" bugCount="0" size="7"/>
+    <FileStats path="DAO/ProfesorDAOImpl.java" bugCount="0" size="23"/>
+    <FileStats path="DAO/UsuarioDAO.java" bugCount="0" size="10"/>
+    <FileStats path="DAO/UsuarioDAOImpl.java" bugCount="0" size="39"/>
+    <FileStats path="entity/Coordenada.java" bugCount="0" size="57"/>
+    <FileStats path="entity/Edificio.java" bugCount="0" size="117"/>
+    <FileStats path="entity/Espacio.java" bugCount="0" size="98"/>
+    <FileStats path="entity/Panorama.java" bugCount="0" size="29"/>
+    <FileStats path="entity/Plano.java" bugCount="0" size="29"/>
+    <FileStats path="entity/PlanoPK.java" bugCount="0" size="32"/>
+    <FileStats path="entity/Profesor.java" bugCount="0" size="29"/>
+    <FileStats path="entity/Usuario.java" bugCount="0" size="59"/>
+    <FileStats path="services/ProjectsService.java" bugCount="0" size="666"/>
+    <FileStats path="utils/EdificioSerializer.java" bugCount="0" size="39"/>
+    <FileStats path="utils/EspacioSerializer.java" bugCount="0" size="52"/>
+    <FileStats path="utils/Imagen.java" bugCount="0" size="27"/>
+    <FileStats path="utils/ProfesorSerializer.java" bugCount="0" size="17"/>
+    <FileStats path="utils/UsuarioSerializer.java" bugCount="0" size="15"/>
+    <PackageStats package="DAO" total_bugs="0" total_types="19" total_size="308">
+      <ClassStats class="DAO.CoordenadaDAO" sourceFile="CoordenadaDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.CoordenadaDAOImpl" sourceFile="CoordenadaDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.DAO" sourceFile="DAO.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="DAO.DAOFactory" sourceFile="DAOFactory.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.DAOFactory$TYPE" sourceFile="DAOFactory.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="DAO.DAOImpl" sourceFile="DAOImpl.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="DAO.EdificioDAO" sourceFile="EdificioDAO.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="DAO.EdificioDAOImpl" sourceFile="EdificioDAOImpl.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="DAO.EspacioDAO" sourceFile="EspacioDAO.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="DAO.EspacioDAOImpl" sourceFile="EspacioDAOImpl.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="DAO.JPADAOFactory" sourceFile="JPADAOFactory.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="DAO.PanoramaDAO" sourceFile="PanoramaDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.PanoramaDAOImpl" sourceFile="PanoramaDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.PlanoDAO" sourceFile="PlanoDAO.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DAO.PlanoDAOImpl" sourceFile="PlanoDAOImpl.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="DAO.ProfesorDAO" sourceFile="ProfesorDAO.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="DAO.ProfesorDAOImpl" sourceFile="ProfesorDAOImpl.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="DAO.UsuarioDAO" sourceFile="UsuarioDAO.java" interface="true" size="10" bugs="0"/>
+      <ClassStats class="DAO.UsuarioDAOImpl" sourceFile="UsuarioDAOImpl.java" interface="false" size="39" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="entity" total_bugs="0" total_types="8" total_size="450">
+      <ClassStats class="entity.Coordenada" sourceFile="Coordenada.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="entity.Edificio" sourceFile="Edificio.java" interface="false" size="117" bugs="0"/>
+      <ClassStats class="entity.Espacio" sourceFile="Espacio.java" interface="false" size="98" bugs="0"/>
+      <ClassStats class="entity.Panorama" sourceFile="Panorama.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="entity.Plano" sourceFile="Plano.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="entity.PlanoPK" sourceFile="PlanoPK.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="entity.Profesor" sourceFile="Profesor.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="entity.Usuario" sourceFile="Usuario.java" interface="false" size="59" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="services" total_bugs="0" total_types="3" total_size="666">
+      <ClassStats class="services.ProjectsService" sourceFile="ProjectsService.java" interface="false" size="542" bugs="0"/>
+      <ClassStats class="services.ProjectsService$1" sourceFile="ProjectsService.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="services.ProjectsService$2" sourceFile="ProjectsService.java" interface="false" size="55" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="utils" total_bugs="0" total_types="5" total_size="150">
+      <ClassStats class="utils.EdificioSerializer" sourceFile="EdificioSerializer.java" interface="false" size="39" bugs="0"/>
+      <ClassStats class="utils.EspacioSerializer" sourceFile="EspacioSerializer.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="utils.Imagen" sourceFile="Imagen.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="utils.ProfesorSerializer" sourceFile="ProfesorSerializer.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="utils.UsuarioSerializer" sourceFile="UsuarioSerializer.java" interface="false" size="15" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="255" invocations="567" avgMicrosecondsPerInvocation="450" maxMicrosecondsPerInvocation="14951" standardDeviationMicrosecondsPerInvocation="1029"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="220" invocations="570" avgMicrosecondsPerInvocation="387" maxMicrosecondsPerInvocation="14930" standardDeviationMicrosecondsPerInvocation="923"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.taintanalysis.TaintDataflowEngine" totalMilliseconds="209" invocations="276" avgMicrosecondsPerInvocation="757" maxMicrosecondsPerInvocation="45531" standardDeviationMicrosecondsPerInvocation="3442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="157" invocations="281" avgMicrosecondsPerInvocation="558" maxMicrosecondsPerInvocation="22803" standardDeviationMicrosecondsPerInvocation="1857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="156" invocations="276" avgMicrosecondsPerInvocation="568" maxMicrosecondsPerInvocation="17031" standardDeviationMicrosecondsPerInvocation="1692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="154" invocations="79" avgMicrosecondsPerInvocation="1958" maxMicrosecondsPerInvocation="19979" standardDeviationMicrosecondsPerInvocation="3587"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="150" invocations="270" avgMicrosecondsPerInvocation="556" maxMicrosecondsPerInvocation="9798" standardDeviationMicrosecondsPerInvocation="1296"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="144" invocations="282" avgMicrosecondsPerInvocation="513" maxMicrosecondsPerInvocation="12750" standardDeviationMicrosecondsPerInvocation="1644"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="142" invocations="413" avgMicrosecondsPerInvocation="345" maxMicrosecondsPerInvocation="9149" standardDeviationMicrosecondsPerInvocation="736"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="134" invocations="276" avgMicrosecondsPerInvocation="486" maxMicrosecondsPerInvocation="17256" standardDeviationMicrosecondsPerInvocation="1590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="123" invocations="79" avgMicrosecondsPerInvocation="1558" maxMicrosecondsPerInvocation="12373" standardDeviationMicrosecondsPerInvocation="2657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="96" invocations="332" avgMicrosecondsPerInvocation="291" maxMicrosecondsPerInvocation="12541" standardDeviationMicrosecondsPerInvocation="870"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="89" invocations="150" avgMicrosecondsPerInvocation="595" maxMicrosecondsPerInvocation="9459" standardDeviationMicrosecondsPerInvocation="1467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="82" invocations="35" avgMicrosecondsPerInvocation="2368" maxMicrosecondsPerInvocation="55928" standardDeviationMicrosecondsPerInvocation="9801"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="74" invocations="33" avgMicrosecondsPerInvocation="2257" maxMicrosecondsPerInvocation="7025" standardDeviationMicrosecondsPerInvocation="2111"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="66" invocations="332" avgMicrosecondsPerInvocation="199" maxMicrosecondsPerInvocation="38999" standardDeviationMicrosecondsPerInvocation="2135"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="46" invocations="79" avgMicrosecondsPerInvocation="594" maxMicrosecondsPerInvocation="11803" standardDeviationMicrosecondsPerInvocation="1450"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="42" invocations="161" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="15058" standardDeviationMicrosecondsPerInvocation="1234"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="41" invocations="461" avgMicrosecondsPerInvocation="89" maxMicrosecondsPerInvocation="2349" standardDeviationMicrosecondsPerInvocation="195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="40" invocations="79" avgMicrosecondsPerInvocation="517" maxMicrosecondsPerInvocation="7907" standardDeviationMicrosecondsPerInvocation="1300"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.password.ConstantPasswordDetector" totalMilliseconds="39" invocations="35" avgMicrosecondsPerInvocation="1141" maxMicrosecondsPerInvocation="23723" standardDeviationMicrosecondsPerInvocation="4043"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="38" invocations="276" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="3604" standardDeviationMicrosecondsPerInvocation="411"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="36" invocations="79" avgMicrosecondsPerInvocation="462" maxMicrosecondsPerInvocation="15064" standardDeviationMicrosecondsPerInvocation="1719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="35" invocations="79" avgMicrosecondsPerInvocation="455" maxMicrosecondsPerInvocation="5181" standardDeviationMicrosecondsPerInvocation="897"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="34" invocations="35" avgMicrosecondsPerInvocation="996" maxMicrosecondsPerInvocation="15992" standardDeviationMicrosecondsPerInvocation="2650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.obl.ObligationAnalysis" totalMilliseconds="33" invocations="39" avgMicrosecondsPerInvocation="855" maxMicrosecondsPerInvocation="5838" standardDeviationMicrosecondsPerInvocation="1290"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="33" invocations="79" avgMicrosecondsPerInvocation="421" maxMicrosecondsPerInvocation="7734" standardDeviationMicrosecondsPerInvocation="944"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="32" invocations="79" avgMicrosecondsPerInvocation="406" maxMicrosecondsPerInvocation="7111" standardDeviationMicrosecondsPerInvocation="993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="30" invocations="3772" avgMicrosecondsPerInvocation="8" maxMicrosecondsPerInvocation="1776" standardDeviationMicrosecondsPerInvocation="39"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.file.PathTraversalDetector" totalMilliseconds="28" invocations="35" avgMicrosecondsPerInvocation="804" maxMicrosecondsPerInvocation="10170" standardDeviationMicrosecondsPerInvocation="1721"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xpath.XPathInjectionDetector" totalMilliseconds="26" invocations="35" avgMicrosecondsPerInvocation="748" maxMicrosecondsPerInvocation="13379" standardDeviationMicrosecondsPerInvocation="2231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="25" invocations="35" avgMicrosecondsPerInvocation="742" maxMicrosecondsPerInvocation="12994" standardDeviationMicrosecondsPerInvocation="2178"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.redirect.UnvalidatedRedirectDetector" totalMilliseconds="25" invocations="35" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="11985" standardDeviationMicrosecondsPerInvocation="2001"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.SqlInjectionDetector" totalMilliseconds="25" invocations="35" avgMicrosecondsPerInvocation="716" maxMicrosecondsPerInvocation="12564" standardDeviationMicrosecondsPerInvocation="2102"/>
+      <ClassProfile name="edu.umd.cs.findbugs.DetectorToDetector2Adapter" totalMilliseconds="25" invocations="7517" avgMicrosecondsPerInvocation="3" maxMicrosecondsPerInvocation="52" standardDeviationMicrosecondsPerInvocation="1"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="24" invocations="270" avgMicrosecondsPerInvocation="91" maxMicrosecondsPerInvocation="3297" standardDeviationMicrosecondsPerInvocation="303"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="24" invocations="35" avgMicrosecondsPerInvocation="691" maxMicrosecondsPerInvocation="6630" standardDeviationMicrosecondsPerInvocation="1171"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.sql.AndroidSqlInjectionDetector" totalMilliseconds="24" invocations="35" avgMicrosecondsPerInvocation="690" maxMicrosecondsPerInvocation="12708" standardDeviationMicrosecondsPerInvocation="2120"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.custom.CustomInjectionDetector" totalMilliseconds="23" invocations="35" avgMicrosecondsPerInvocation="674" maxMicrosecondsPerInvocation="12157" standardDeviationMicrosecondsPerInvocation="2026"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="23" invocations="35" avgMicrosecondsPerInvocation="671" maxMicrosecondsPerInvocation="4117" standardDeviationMicrosecondsPerInvocation="938"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="22" invocations="35" avgMicrosecondsPerInvocation="653" maxMicrosecondsPerInvocation="10895" standardDeviationMicrosecondsPerInvocation="1855"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="22" invocations="79" avgMicrosecondsPerInvocation="280" maxMicrosecondsPerInvocation="5984" standardDeviationMicrosecondsPerInvocation="1196"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="21" invocations="35" avgMicrosecondsPerInvocation="622" maxMicrosecondsPerInvocation="6949" standardDeviationMicrosecondsPerInvocation="1150"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.xml.StdXmlTransformDetector" totalMilliseconds="21" invocations="35" avgMicrosecondsPerInvocation="605" maxMicrosecondsPerInvocation="9762" standardDeviationMicrosecondsPerInvocation="1636"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.aws.AwsQueryInjectionDetector" totalMilliseconds="20" invocations="35" avgMicrosecondsPerInvocation="599" maxMicrosecondsPerInvocation="9046" standardDeviationMicrosecondsPerInvocation="1522"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CheckRelaxingNullnessAnnotation" totalMilliseconds="20" invocations="35" avgMicrosecondsPerInvocation="598" maxMicrosecondsPerInvocation="10059" standardDeviationMicrosecondsPerInvocation="1724"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.trust.TrustBoundaryViolationAttributeDetector" totalMilliseconds="20" invocations="35" avgMicrosecondsPerInvocation="583" maxMicrosecondsPerInvocation="6504" standardDeviationMicrosecondsPerInvocation="1168"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.command.CommandInjectionDetector" totalMilliseconds="20" invocations="35" avgMicrosecondsPerInvocation="573" maxMicrosecondsPerInvocation="7010" standardDeviationMicrosecondsPerInvocation="1246"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.ldap.LdapInjectionDetector" totalMilliseconds="18" invocations="35" avgMicrosecondsPerInvocation="525" maxMicrosecondsPerInvocation="6352" standardDeviationMicrosecondsPerInvocation="1108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="18" invocations="270" avgMicrosecondsPerInvocation="68" maxMicrosecondsPerInvocation="1234" standardDeviationMicrosecondsPerInvocation="136"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.XssMvcApiDetector" totalMilliseconds="18" invocations="35" avgMicrosecondsPerInvocation="524" maxMicrosecondsPerInvocation="6362" standardDeviationMicrosecondsPerInvocation="1145"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.OgnlInjectionDetector" totalMilliseconds="18" invocations="35" avgMicrosecondsPerInvocation="523" maxMicrosecondsPerInvocation="6171" standardDeviationMicrosecondsPerInvocation="1071"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.script.ScriptInjectionDetector" totalMilliseconds="18" invocations="35" avgMicrosecondsPerInvocation="523" maxMicrosecondsPerInvocation="6499" standardDeviationMicrosecondsPerInvocation="1127"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.scala.ScalaSensitiveDataExposureDetector" totalMilliseconds="18" invocations="35" avgMicrosecondsPerInvocation="521" maxMicrosecondsPerInvocation="6483" standardDeviationMicrosecondsPerInvocation="1127"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="18" invocations="79" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="2768" standardDeviationMicrosecondsPerInvocation="452"/>
+      <ClassProfile name="com.h3xstream.findsecbugs.injection.http.HttpParameterPollutionDetector" totalMilliseconds="17" invocations="35" avgMicrosecondsPerInvocation="510" maxMicrosecondsPerInvocation="6389" standardDeviationMicrosecondsPerInvocation="1118"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
