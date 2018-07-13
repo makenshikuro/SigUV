@@ -139,8 +139,9 @@ public class espacioBean implements Serializable {
 		String navegacion;
 		nav = "basic";
 		setEspacio(ejb.getEspacio(id));
+		System.out.println("editarEspacio" + idespacio);
 		profesorSource = ejb.getNombresProfesores();
-		profesorTarget = new ArrayList<String>();
+		profesorTarget = new ArrayList<>();
 		
 		for (Profesor p : espacio.getProfesores()) {
 			profesorSource.remove(p.getIdprofesor());
@@ -171,8 +172,13 @@ public class espacioBean implements Serializable {
 
 			// String nombre = edificio.getIdedificio() + "-" + getIdespacio() + "_" +
 			// numPano;
+			System.out.println("save getIdespacio " + getEspacio().getIdespacio());
+			if (idespacio == null) {
+				imagen.setNombre(edificio.getIdedificio() + "-" + getEspacio().getIdespacio() + "_" + numPano);
+			} else {
+				imagen.setNombre(edificio.getIdedificio() + "-" + getIdespacio() + "_" + numPano);
+			}
 
-			imagen.setNombre(edificio.getIdedificio() + "-" + getIdespacio() + "_" + numPano);
 			imagen.setNivel(numPano);
 			imagen.setExtension(extension);
 
@@ -315,6 +321,7 @@ public class espacioBean implements Serializable {
 	public void setEspacio(Espacio e) {
 
 		espacio = e;
+		setIdespacio(e.getIdespacio().split("-")[1]);
 		setCoordenada(e.getCoordenada());
 		setLocalizacion(e.getCoordenada().getLatitud() + "," + e.getCoordenada().getLongitud());
 		setCodEspacio(getEspacio().getIdespacio().substring(getEspacio().getIdespacio().lastIndexOf("E") + 1));

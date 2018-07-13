@@ -54,7 +54,7 @@
  		 selection="#{espacioBean.selectedEspacio}" selectionMode="single" rowKey="#{p.idespacio}" 
  		emptyMessage="Ningun Espacio coincide con los criterios" filteredValue="#{espacioBean.filtroEspacio}">
  		
- 		<p:ajax event="rowSelect" listener="#{espacioBean.onRowSelect}"  />
+ 		
    
  		<p:column filterBy="#{p.idespacio}" headerText="Espacio" footerText="" filterMatchMode="contains">   
         	<p:outputLabel value="#{p.idespacio}"/>
